@@ -85,7 +85,11 @@ class Vehicle
 
   def assign_driver(driver)
     if @driver.nil?
-      @driver = driver
+      if driver_assignable?(driver)
+        @driver = driver
+      else
+        raise "Can't assign driver with #{driver.category} catergory, #{@required_category} required"
+      end
     else
       raise "Can't assign more than one driver, #{@driver} already assigned"
     end
@@ -138,6 +142,10 @@ class Vehicle
 
   def passenger_loadable?
     !(passengers_limit_exceeded? || @passengers.size + 1 > @passengers_limit)
+  end
+
+  def driver_assignable?(driver)
+    !driver.nil? && driver.category == @required_category
   end
 
   def valid_driver?
