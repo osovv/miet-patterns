@@ -1,5 +1,5 @@
-import { Driver } from "./driver";
-import { Passenger } from "./passenger";
+import { Driver } from "./driver.ts";
+import { Passenger } from "./passenger.ts";
 
 type TransportType = "bus" | "taxi";
 

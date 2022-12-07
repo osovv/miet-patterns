@@ -1,6 +1,6 @@
-import { BusBuilder } from "./src/bus_builder";
-import { Director } from "./src/director";
-import { TaxiBuilder } from "./src/taxi_driver";
+import { BusBuilder } from "./src/bus_builder.ts";
+import { Director } from "./src/director.ts";
+import { TaxiBuilder } from "./src/taxi_driver.ts";
 
 function main() {
   const director = new Director();

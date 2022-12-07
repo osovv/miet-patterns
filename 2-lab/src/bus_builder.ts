@@ -1,7 +1,7 @@
-import { Builder } from "./builder";
-import { Driver } from "./driver";
-import { ALL_PASSENGER_TYPES, Passenger } from "./passenger";
-import { getRandomValue } from "./utils";
+import { Builder } from "./builder.ts";
+import { Driver } from "./driver.ts";
+import { ALL_PASSENGER_TYPES, Passenger } from "./passenger.ts";
+import { getRandomValue } from "./utils.ts";
 
 class BusBuilder extends Builder {
   constructor() {

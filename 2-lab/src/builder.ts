@@ -1,4 +1,4 @@
-import { Transport, TransportType } from "./transport";
+import { Transport, TransportType } from "./transport.ts";
 
 abstract class Builder {
   protected _transport: Transport;

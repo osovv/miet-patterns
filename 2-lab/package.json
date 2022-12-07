@@ -2,6 +2,7 @@
   "name": "2-lab",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.1"
   }
 }
