@@ -1,4 +1,4 @@
-import { stringUnionToArray } from "./utils";
+import { stringUnionToArray } from "./utils.ts";
 
 type PassengerType = "adult" | "child" | "discount";
 

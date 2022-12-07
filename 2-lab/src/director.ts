@@ -1,5 +1,5 @@
-import { Builder } from "./builder";
-import { Transport } from "./transport";
+import { Builder } from "./builder.ts";
+import { Transport } from "./transport.ts";
 
 class Director {
   createTransport(builder: Builder): Transport {
